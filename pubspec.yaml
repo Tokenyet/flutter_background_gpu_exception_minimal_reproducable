@@ -35,17 +35,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
 
-  cached_network_image:
-    git:
-      url: git@git.linecorp.com:LINE-Shopping-TW/cached_network_image.git
-      ref: 3c0fb7677a5c0c6a46a993d13a6215d9e68c0660
-      path: cached_network_image
+  cached_network_image: ^3.4.1
 
-  flutter_cache_manager:
-    git:
-      url: git@git.linecorp.com:LINE-Shopping-TW/flutter_cache_manager.git
-      ref: 84189f0610895d6c2f7d38cf4dd84ec3e35e5d5d
-      path: flutter_cache_manager
+  async: ^2.11.0
 
 dev_dependencies:
   flutter_test:

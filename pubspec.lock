@@ -2,7 +2,7 @@
 # See https://dart.dev/tools/pub/glossary#lockfile
 packages:
   async:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: async
       sha256: d2872f9c19731c2e5f10444b14686eb7cc85c76274bd6c16e1816bff9a3bab63
@@ -20,29 +20,26 @@ packages:
   cached_network_image:
     dependency: "direct main"
     description:
-      path: cached_network_image
-      ref: "3c0fb7677a5c0c6a46a993d13a6215d9e68c0660"
-      resolved-ref: "3c0fb7677a5c0c6a46a993d13a6215d9e68c0660"
-      url: "git@git.linecorp.com:LINE-Shopping-TW/cached_network_image.git"
-    source: git
+      name: cached_network_image
+      sha256: "7c1183e361e5c8b0a0f21a28401eecdbde252441106a9816400dd4c2b2424916"
+      url: "https://pub.dev"
+    source: hosted
     version: "3.4.1"
   cached_network_image_platform_interface:
     dependency: transitive
     description:
-      path: cached_network_image_platform_interface
-      ref: "twshopping_cached_network_image/3.4.1"
-      resolved-ref: "4b295480ac485ba6f650c6ff1e275441304b4839"
-      url: "git@git.linecorp.com:LINE-Shopping-TW/cached_network_image.git"
-    source: git
+      name: cached_network_image_platform_interface
+      sha256: "35814b016e37fbdc91f7ae18c8caf49ba5c88501813f73ce8a07027a395e2829"
+      url: "https://pub.dev"
+    source: hosted
     version: "4.1.1"
   cached_network_image_web:
     dependency: transitive
     description:
-      path: cached_network_image_web
-      ref: "twshopping_cached_network_image/3.4.1"
-      resolved-ref: "4b295480ac485ba6f650c6ff1e275441304b4839"
-      url: "git@git.linecorp.com:LINE-Shopping-TW/cached_network_image.git"
-    source: git
+      name: cached_network_image_web
+      sha256: "980842f4e8e2535b8dbd3d5ca0b1f0ba66bf61d14cc3a17a9b4788a3685ba062"
+      url: "https://pub.dev"
+    source: hosted
     version: "1.3.1"
   characters:
     dependency: transitive
@@ -122,13 +119,12 @@ packages:
     source: sdk
     version: "0.0.0"
   flutter_cache_manager:
-    dependency: "direct main"
+    dependency: transitive
     description:
-      path: flutter_cache_manager
-      ref: "84189f0610895d6c2f7d38cf4dd84ec3e35e5d5d"
-      resolved-ref: "84189f0610895d6c2f7d38cf4dd84ec3e35e5d5d"
-      url: "git@git.linecorp.com:LINE-Shopping-TW/flutter_cache_manager.git"
-    source: git
+      name: flutter_cache_manager
+      sha256: "400b6592f16a4409a7f2bb929a9a7e38c72cceb8ffb99ee57bbf2cb2cecf8386"
+      url: "https://pub.dev"
+    source: hosted
     version: "3.4.1"
   flutter_lints:
     dependency: "direct dev"
@@ -243,10 +239,10 @@ packages:
     dependency: transitive
     description:
       name: path_provider_android
-      sha256: d0d310befe2c8ab9e7f393288ccbb11b60c019c6b5afc21973eeee4dda2b35e9
+      sha256: "993381400e94d18469750e5b9dcb8206f15bc09f9da86b9e44a9b0092a0066db"
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.17"
+    version: "2.2.18"
   path_provider_foundation:
     dependency: transitive
     description:
