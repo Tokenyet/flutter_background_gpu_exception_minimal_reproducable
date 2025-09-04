@@ -30,7 +30,6 @@ class _ImageLoadTestPageState extends State<ImageLoadTestPage> with WidgetsBindi
   final int _imageCount = 100;
   final _successCount = ValueNotifier<int>(0);
   final _failureCount = ValueNotifier<int>(0);
-  String _appState = 'foreground';
   bool _isLoading = true;
 
   @override
@@ -47,7 +46,6 @@ class _ImageLoadTestPageState extends State<ImageLoadTestPage> with WidgetsBindi
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    _appState = state.toString().split('.').last;
     if (state == AppLifecycleState.paused) {
       _reload();
     }
@@ -55,10 +53,7 @@ class _ImageLoadTestPageState extends State<ImageLoadTestPage> with WidgetsBindi
 
   @override
   Widget build(BuildContext context) => Scaffold(
-    appBar: AppBar(
-      title: const Text('GPU Task Overflow Demo'),
-      backgroundColor: _appState == 'paused' ? Colors.red : Colors.blue,
-    ),
+    appBar: AppBar(title: const Text('GPU Task Overflow Demo')),
     body: Column(
       children: [
         Padding(
@@ -66,14 +61,6 @@ class _ImageLoadTestPageState extends State<ImageLoadTestPage> with WidgetsBindi
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                'App State: $_appState',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: _appState == 'paused' ? Colors.red : Colors.green,
-                ),
-              ),
               const SizedBox(height: 8),
               Text('Total Images: $_imageCount'),
               ValueListenableBuilder(
