@@ -191,9 +191,3 @@ flutter run -d [device-id]
 ## Contributing
 
 This is a minimal reproduction case for debugging purposes. If you have insights into the GPU memory pool issue or potential fixes, please contribute to the investigation.
-
-## Reference
-
-For more technical details about this issue, see:
-
-- [ECAC App - iOS Image upload failed due to loss of GPU access](https://wiki.workers-hub.com/display/TEC/ECAC+App+-+iOS+Image+upload+failed+due+to+loss+of+GPU+access)
