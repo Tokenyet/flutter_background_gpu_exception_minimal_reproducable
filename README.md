@@ -55,6 +55,34 @@ The following video demonstrates the GPU memory pool bug in action:
 
 > **Note**: If the video doesn't display inline, you can [download and view it directly](./resources/demo.mp4)
 
+## Fixed Version Demo
+
+After applying the fix (using the patched `cached_network_image` package), the issue is resolved:
+
+**To apply the fix:**
+
+1. Open `pubspec.yaml`
+2. Comment out the current `cached_network_image: ^3.4.1` line
+3. Uncomment the git dependency block that points to the fixed version
+
+**Fixed Version Video:**
+
+![Demo Video](./resources/fix-demo.mp4)
+
+The fixed version demonstrates:
+
+- ✅ All 100 images load successfully even after app returns from background
+- ✅ Success count remains: 100, Failed count: 0
+- ✅ No GPU memory pool exhaustion
+- ✅ Consistent behavior between foreground and post-background states
+
+**Fix Details:**
+
+- **Repository**: https://github.com/mutant0113/flutter_cached_network_image
+- **Branch**: `fix_ios_image_upload_failed_due_to_loss_of_GPU_access`
+- **Commit**: `12ff326a66049e75521f4f2ac564281836be8aa5`
+- **Changes**: Addresses the GPU context pool management issues in the cached network image implementation
+
 ## Reproduction Steps
 
 1. **Setup**: Run the Flutter app on an iOS device or simulator
