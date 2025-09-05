@@ -45,7 +45,7 @@ The bug originates from Flutter's Impeller rendering engine, specifically in the
 
 The following video demonstrates the GPU memory pool bug in action:
 
-![Demo Video](./resources/demo.mp4)
+https://github.com/user-attachments/assets/d4b6df38-8a28-4fc3-a1f9-bdc0bb54f060
 
 **Video Description:**
 
@@ -67,7 +67,7 @@ After applying the fix (using the patched `cached_network_image` package), the i
 
 **Fixed Version Video:**
 
-![Demo Video](./resources/fix-demo.mp4)
+https://github.com/user-attachments/assets/7c5f8534-e735-4b8e-821a-7b795a829e30
 
 The fixed version demonstrates:
 
